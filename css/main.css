@@ -113,3 +113,19 @@ span {
   background: skyblue;
   color: white;
 }
+
+.count-blue {
+  color: #3498DB
+}
+
+.count-green {
+  color: #2ECC71;
+}
+
+.count-yellow {
+  color: #F4D03F;
+}
+
+.count-red {
+  color: #E74C3C;
+}

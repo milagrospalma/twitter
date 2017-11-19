@@ -14,6 +14,33 @@ window.addEventListener('load', function() {
     btn.disabled = false;
     btn.classList.add('btn-enabled');
     count.textContent = counterNumber;
+    // Cambiando de color el contador
+    if (totalCharacteres < 120) {
+      count.classList.remove('count-red');
+      count.classList.remove('count-yellow');
+      count.classList.remove('count-green');
+      count.classList.add('count-blue');
+    } else if (totalCharacteres >= 120 && totalCharacteres < 130) {
+      count.classList.remove('count-blue');
+      count.classList.remove('count-red');
+      count.classList.remove('count-yellow');
+      count.classList.add('count-green');
+    } else if (totalCharacteres >= 130 && totalCharacteres < 140) {
+      count.classList.remove('count-green');
+      count.classList.remove('count-blue');
+      count.classList.remove('count-red');
+      count.classList.add('count-yellow');
+    } else if (totalCharacteres > 140) {
+      // El botón se deshabilita si se supera los 140 caracteres
+      btn.disabled = true;
+      // Eliminando estilo del botón habilitado
+      btn.classList.remove('btn-enabled');
+    } else {
+      count.classList.remove('count-yellow');
+      count.classList.remove('count-green');
+      count.classList.remove('count-blue');
+      count.classList.add('count-red');
+    }
   });
   // Evento para el botón
   btn.addEventListener('click', function() {
