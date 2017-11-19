@@ -59,7 +59,12 @@ window.addEventListener('load', function() {
     div.classList.add('line-height');
     section.appendChild(div);
     text.value = '';
-    count.textContent = '';
+    // Reinicia el contador y lo vuelve a su estado inicial
+    count.textContent = '140';
+    count.classList.remove('count-blue');
+    count.classList.remove('count-yellow');
+    count.classList.remove('count-green');
+    count.classList.remove('count-red');
     btn.disabled = true;
     btn.classList.remove('btn-enabled');
   });
