@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: pink;
+}
+
+header {
+  background: skyblue;
+  color: #FFF;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+section {
+  padding: 65px 100px 100px;
+  text-align: center;
+  width: 100%;
+}
+
+#container {
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+}
+
+.white-box {
+  border-radius: 3px;
+  background-color: #FFF;
+  width: 400px;
+  margin: 0 4px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+#information {
+  float: left;
+  text-align: justify;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+#input-tweet {
+  padding: 15px;
+  text-align: justify;
+  float: left;
+}
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  /*Elimina el estilo de redimensión*/
+  resize: none;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #EEE;
+}
+
+button {
+  padding: 15px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+span {
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 0 5px;
+  float: right;
+  color: #909497;
+  font-weight: 700;
+}
