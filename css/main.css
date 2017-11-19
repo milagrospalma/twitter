@@ -71,6 +71,8 @@ textarea {
   font-size: 15px;
   border: none;
   border-bottom: 2px solid #EEE;
+  /*Oculta el scroll*/
+  overflow-y: hidden;
 }
 
 /*Eliminando estilo predeterinado cuando seleccionamos el input*/

@@ -41,6 +41,12 @@ window.addEventListener('load', function() {
       count.classList.remove('count-blue');
       count.classList.add('count-red');
     }
+    // Para que crezca el textarea
+    setTimeout(function() {
+      text.style.cssText = 'height:auto';
+      // scrollHeight retorna la altura del contenido
+      text.style.cssText = 'height:' + text.scrollHeight + 'px';
+    }, 0);
   });
   // Evento para el botón
   btn.addEventListener('click', function() {
