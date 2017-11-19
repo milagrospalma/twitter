@@ -7,7 +7,13 @@ window.addEventListener('load', function() {
   count.textContent = '140';
   // Evento para el textarea
   text.addEventListener('keyup', function() {
+    var characteres = text.value.split(''); // Extrae caracteres en un array
+    var totalCharacteres = characteres.length;
+    // Siendo la cantidad máxima de caracteres 140, para que el contador disminuya conforme se ingresen los caracteres se resta la cantidad máxima menos la cantidad de caracteres ingresados
+    var counterNumber = 140 - totalCharacteres;
     btn.disabled = false;
+    btn.classList.add('btn-enabled');
+    count.textContent = counterNumber;
   });
   // Evento para el botón
   btn.addEventListener('click', function() {
