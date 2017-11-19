@@ -4,6 +4,9 @@ window.addEventListener('load', function() {
   var count = document.querySelector('span');
   var btn = document.querySelector('button');
   var section = document.querySelector('section');
+  // La variable time almacena la hora y minuto del tweet
+  var time = moment().format('LT');
+  // El contador empieza con 140 por defecto
   count.textContent = '140';
   // Evento para el textarea
   text.addEventListener('keyup', function() {
@@ -51,7 +54,7 @@ window.addEventListener('load', function() {
   // Evento para el botón
   btn.addEventListener('click', function() {
     var div = document.createElement('div');
-    div.innerHTML = text.value;
+    div.innerHTML = text.value + '<br>' + time;
     div.classList.add('tweet');
     div.classList.add('line-height');
     section.appendChild(div);
