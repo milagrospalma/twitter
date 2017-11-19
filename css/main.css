@@ -73,6 +73,13 @@ textarea {
   border-bottom: 2px solid #EEE;
 }
 
+/*Eliminando estilo predeterinado cuando seleccionamos el input*/
+textarea:focus {
+  /*Borde sin color*/
+  outline: none;
+  border-bottom: 2px solid skyblue;
+}
+
 button {
   padding: 15px 30px;
   margin-top: 20px;
@@ -88,4 +95,21 @@ span {
   float: right;
   color: #909497;
   font-weight: 700;
+}
+
+/* Estilos para js */
+.tweet {
+  background: #FFF;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: justify;
+  width: 810px;
+  /* Corta el texto para que no salga de su contenedor */
+  word-wrap: break-word;
+}
+
+.btn-enabled {
+  background: skyblue;
+  color: white;
 }
