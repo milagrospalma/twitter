@@ -1,24 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Courier;
-  background-image: url(../assets/images/park.jpg);
+  background-image: url(https://fotos.subefotos.com/ea28240004766d8f193ca401a5e570e6o.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-header {
-  background: skyblue;
+.bg-nav {
+  background-color: rgb(58, 180, 228);
   color: #FFF;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  z-index: 1000;
+  /* padding: 10px; */
+  /* z-index: 1000; */
+}
+
+.text-white {
+  color: #FFF;
+  font-weight: 700;
 }
 
 section {
